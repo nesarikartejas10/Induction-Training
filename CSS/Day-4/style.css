@@ -1,0 +1,86 @@
+/* table properties */
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.first-table {
+  text-align: center;
+  empty-cells: hide;
+}
+
+.first-table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+.first-table thead {
+  background-color: lightblue;
+}
+
+.first-table tbody {
+  background-color: lightgreen;
+}
+
+.second-table {
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.second-table thead {
+  background-color: lightcoral;
+}
+
+.second-table tbody {
+  background-color: lightpink;
+}
+
+/* display: none and visibility: hidden */
+
+.section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.container {
+  border: 1px solid black;
+  width: 40%;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: lightblue;
+}
+
+.container .box {
+  width: 200px;
+  height: 150px;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.container .box-1 {
+  background-color: lightcoral;
+}
+.container-1 .box-2 {
+  background-color: lightgreen;
+  display: none;
+}
+
+.container-2 .box-2 {
+  background-color: lightgreen;
+  visibility: hidden;
+}
+.container .box-3 {
+  background-color: lightgoldenrodyellow;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp Form</title>
+  </head>
+  <body style="font-family: Arial, sans-serif; background-color: #007e62">
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <h1 style="color: #fff">SignUp Form</h1>
+      <form
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          border: 1px solid black;
+          width: 50%;
+          gap: 20px;
+          padding: 10px;
+          background-color: #e6e6e6;
+          border-radius: 10px;
+        "
+      >
+        <div>
+          <label for="name"><strong>Name:</strong></label>
+          <input type="text" name="name" id="name" required autofocus />
+        </div>
+        <div>
+          <label for="email"><strong>Email:</strong></label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div>
+          <label for="password"><strong>Password:</strong></label>
+          <input type="password" name="password" id="password" required />
+        </div>
+
+        <div>
+          <label><strong>Gender:</strong></label>
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+        </div>
+
+        <div>
+          <label><strong>Hobbies:</strong></label>
+          <input type="checkbox" name="hobby" id="cricket" />
+          <label for="cricket">Playing Cricket</label>
+          <input type="checkbox" name="hobby" id="music" />
+          <label for="music">Listening Music</label>
+          <input type="checkbox" name="hobby" id="books" />
+          <label for="books">Reading Books</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="term" id="term" required />
+          <label style="font-size: 14px" for="term"
+            >Agree Terms & Conditions<sup
+              style="color: rgb(197, 40, 40); font-size: 18px"
+              >*</sup
+            ></label
+          >
+        </div>
+        <button
+          style="padding: 5px 10px; background-color: #007e62; color: white"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

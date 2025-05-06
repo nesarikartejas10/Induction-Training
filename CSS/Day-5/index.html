@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-index</title>
+    <style>
+      section {
+        height: 400px;
+        width: 700px;
+        border: 1px solid black;
+        position: relative;
+        left: 25%;
+        background-color: rgb(113, 124, 134);
+      }
+
+      .container-z {
+        font-size: 24px;
+        padding: 12px;
+      }
+
+      section .greenyellow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        width: 300px;
+        height: 280px;
+        background-color: greenyellow;
+        border: 5px solid greenyellow;
+      }
+
+      section .orange {
+        position: absolute;
+        top: 190px;
+        left: 0;
+        z-index: 10;
+        width: 220px;
+        height: 150px;
+        margin-top: -120px;
+        background-color: orange;
+        border: 5px solid orange;
+      }
+
+      section .skyblue {
+        position: absolute;
+        top: 120px;
+        left: 160px;
+        z-index: 6;
+        width: 280px;
+        height: 150px;
+        padding-left: 120px;
+        background-color: skyblue;
+        border: 5px solid skyblue;
+      } */
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center; margin-top: 40px">Z-index</h2>
+    <section class="z-box">
+      <div class="container-Z greenyellow">
+        position: absolute; <br />z-index: 3; <br />
+        top: 0; left: 0
+      </div>
+      <div class="container-Z orange">
+        position: absolute; <br />z-index: 10; <br />
+        top: 190px; left: 0;
+      </div>
+      <div class="container-Z skyblue">
+        position: absolute; <br />z-index: 6; <br />
+        top: 120px; left: 160px;
+      </div>
+    </section>
+  </body>
+</html>

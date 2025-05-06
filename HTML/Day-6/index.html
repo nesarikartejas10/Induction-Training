@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <body
+    style="
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    "
+  >
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <h1>Registration Form</h1>
+      <form
+        style="
+          width: 50%;
+          border: 1px solid black;
+          padding: 10px;
+          border-radius: 10px;
+        "
+      >
+        <fieldset style="margin-bottom: 10px">
+          <legend align="center"><strong>Personal Information</strong></legend>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required /><br /><br />
+          <label for="mobile">Mobile:</label>
+          <input type="tel" name="mobile" id="mobile" required /><br /><br />
+          <label for="">Hobbies:</label>
+          <input name="hobby" id="hobby" list="hobbies" required />
+          <datalist id="hobbies">
+            <option value="Playing Cricket" />
+            <option value="Reading Books" />
+            <option value="Listening Music" />
+            <option value="Cooking" />
+            <option value="Traveling" />
+            <option value="Painting" />
+            <option value="Photography" />
+          </datalist>
+        </fieldset>
+
+        <fieldset>
+          <legend align="center"><strong>Address Information</strong></legend>
+          <label for="address">Address:</label><br />
+          <textarea
+            name="address"
+            id="address"
+            rows="5"
+            cols="50"
+            style="
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                serif;
+              width: 100%;
+              font-size: 14px;
+            "
+          ></textarea
+          ><br /><br />
+          <label for="country">Country:</label>
+          <select name="country" id="country">
+            <option>Select Country</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="germany">Germany</option>
+            <option value="china">China</option>
+            <option value="russia">Russia</option>
+          </select>
+        </fieldset>
+        <div align="center">
+          <button style="width: 100px; padding: 5px 10px; margin-top: 5px">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html"
+        ><img src="./images/blogger-logo.png" alt="blog-logo" width="80"
+      /></a>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+
+          <li>
+            <a href="./services.html">Services</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid black;
+        padding-bottom: 20px;
+      "
+    >
+      <h2 class="subheading" align="center">Please Contact Us</h2>
+      <form
+        style="
+          width: 50%;
+          border: 1px solid black;
+          padding: 10px;
+          border-radius: 10px;
+        "
+      >
+        <fieldset style="margin-bottom: 10px">
+          <legend align="center"><strong>Contact Details</strong></legend>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required /><br /><br />
+          <label for="mobile">Mobile:</label>
+          <input type="tel" name="mobile" id="mobile" required /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend align="center"><strong>Address Details</strong></legend>
+          <label for="address">Address:</label><br />
+          <textarea
+            name="address"
+            id="address"
+            rows="5"
+            cols="50"
+            style="
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                serif;
+              width: 100%;
+              font-size: 14px;
+            "
+          ></textarea
+          ><br /><br />
+          <label for="country">Country:</label>
+          <select name="country" id="country">
+            <option>Select Country</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="germany">Germany</option>
+            <option value="china">China</option>
+            <option value="russia">Russia</option>
+          </select>
+        </fieldset>
+        <div align="center">
+          <button style="width: 100px; padding: 5px 10px; margin-top: 5px">
+            Submit
+          </button>
+        </div>
+      </form>
+    </section>
+    <footer align="center">
+      <div>
+        <b> Author:</b> Tejas Nesarikar
+        <a href="mailto:nesarikartejas10@gmail.com"
+          >nesarikartejas10@gmail.com</a
+        >
+      </div>
+
+      <div>
+        <b>Follow me on:</b>
+        <a href="https://www.instagram.com/">Instagram</a> |
+        <a href="https://x.com/">twitter</a>
+      </div>
+      <div>
+        <p>Copyright@2025 All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Sizing Property</title>
+    <style>
+      /* Box Sizing */
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+      .box {
+        width: 500px;
+        padding: 20px;
+        border: 5px solid black;
+        margin: 30px;
+        background: lightgray;
+      }
+
+      .content-box {
+        box-sizing: content-box;
+        background: lightblue;
+      }
+
+      .border-box {
+        box-sizing: border-box;
+        background: lightgreen;
+      }
+
+      .content {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      /* CSS Filter */
+
+      .image-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+      }
+
+      .filter-box {
+        width: 300px;
+      }
+
+      .filter-box img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+
+      .original {
+        filter: none;
+      }
+
+      .blur {
+        filter: blur(3px);
+      }
+
+      .grayscale {
+        filter: grayscale(100%);
+      }
+
+      .brightness {
+        filter: brightness(5);
+      }
+
+      .filter-label {
+        margin-top: 10px;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">Box Sizing Property</h2>
+    <div class="container">
+      <div class="box content-box">
+        <h3>content-box</h3>
+        <div class="content">
+          Total width: 500 + 40 + 10 = 550px<br />
+          (content + padding + border)
+        </div>
+      </div>
+
+      <div class="box border-box">
+        <h3>border-box</h3>
+        <div class="content">
+          Total width: 500px (includes all)<br />
+          Content width: 500 - 40 - 10 = 450px
+        </div>
+      </div>
+    </div>
+
+    <!-- CSS Filter -->
+    <h2 style="text-align: center">CSS Filter Images</h2>
+
+    <div class="image-container">
+      <div class="filter-box">
+        <img src="./tiger.jpg" alt="Original" class="original" />
+        <div class="filter-label">Original Image</div>
+      </div>
+
+      <div class="filter-box">
+        <img src="./tiger.jpg" alt="Blurred" class="blur" />
+        <div class="filter-label">Blur</div>
+      </div>
+
+      <div class="filter-box">
+        <img src="./tiger.jpg" alt="Grayscale" class="grayscale" />
+        <div class="filter-label">Grayscale</div>
+      </div>
+
+      <div class="filter-box">
+        <img src="./tiger.jpg" alt="Bright" class="brightness" />
+        <div class="filter-label">Brightness</div>
+      </div>
+    </div>
+  </body>
+</html>

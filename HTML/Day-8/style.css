@@ -1,0 +1,31 @@
+body {
+  background-color: lightgoldenrodyellow;
+  font-family: "DM Sans", sans-serif;
+}
+.header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.subheading {
+  color: #42b7bb;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+  font-size: 18px;
+  list-style-type: none;
+}
+.nav-links a {
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 20px;
+}
