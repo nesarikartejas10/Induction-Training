@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Center div</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .parent-1 {
+        width: 400px;
+        height: 400px;
+        background-color: lightseagreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .child-1 {
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+      }
+
+      .parent-2 {
+        width: 400px;
+        height: 400px;
+        background-color: lightgreen;
+        position: relative;
+      }
+
+      .child-2 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(226, 43, 67);
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Center div</h1>
+    <div class="container">
+      <div class="parent-1">
+        <div class="child-1"></div>
+      </div>
+      <div class="parent-2">
+        <div class="child-2"></div>
+      </div>
+    </div>
+  </body>
+</html>
