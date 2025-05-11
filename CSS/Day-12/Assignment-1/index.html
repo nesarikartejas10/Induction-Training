@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout with iframe</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        box-sizing: border border-box;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 60px auto 40px;
+        gap: 10px;
+        height: 100vh;
+        padding: 10px;
+        background-color: #f0f0f0;
+      }
+
+      .header {
+        grid-column: 1 / 3;
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding: 10px;
+      }
+
+      .menu {
+        background-color: #fff;
+        padding: 15px;
+        border-right: 2px solid #ddd;
+      }
+
+      .menu a {
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      .menu a:hover {
+        color: #0077cc;
+      }
+
+      .content {
+        background-color: #fff;
+        padding: 0;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      .footer {
+        grid-column: 1 / 3;
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header">My Custom Header</div>
+
+      <div class="menu">
+        <a href="page1.html" target="iframeContent">Link 1</a>
+        <a href="page2.html" target="iframeContent">Link 2</a>
+        <a href="page3.html" target="iframeContent">Link 3</a>
+      </div>
+
+      <div class="content">
+        <iframe name="iframeContent" src="page1.html"></iframe>
+      </div>
+
+      <div class="footer">My Custom Footer</div>
+    </div>
+  </body>
+</html>
