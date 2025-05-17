@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter Classes</title>
+    <link rel="stylesheet" href="../../output.css" />
+  </head>
+  <body>
+    <h1 class="text-center text-2xl font-bold">Tailwind Filter Classes</h1>
+    <div class="flex flex-wrap gap-10 p-6 justify-center">
+      <!-- Original  -->
+      <div class="flex flex-col items-center">
+        <img
+          src="../images/tiger.jpg"
+          alt="Image 1"
+          class="w-96 h-auto shadow-2xl rounded-lg"
+        />
+        <p class="mt-2 text-xl text-gray-700">Original</p>
+      </div>
+
+      <!-- grayscale -->
+      <div class="flex flex-col items-center">
+        <img
+          src="../images/tiger.jpg"
+          alt="Image 1"
+          class="w-96 h-auto filter grayscale-100 shadow-2xl rounded-lg"
+        />
+        <p class="mt-2 text-xl text-gray-700">grayscale-100</p>
+      </div>
+
+      <!-- sepia -->
+      <div class="flex flex-col items-center">
+        <img
+          src="../images/tiger.jpg"
+          alt="Image 2"
+          class="w-96 h-auto filter sepia-100 shadow-2xl rounded-lg"
+        />
+        <p class="mt-2 text-xl text-gray-700">sepia-100</p>
+      </div>
+
+      <!-- brightness -->
+      <div class="flex flex-col items-center">
+        <img
+          src="../images/tiger.jpg"
+          alt="Image 3"
+          class="w-96 h-auto filter brightness-200 shadow-2xl rounded-lg"
+        />
+        <p class="mt-2 text-xl text-gray-700">brightness-200</p>
+      </div>
+
+      <!-- blur -->
+      <div class="flex flex-col items-center">
+        <img
+          src="../images/tiger.jpg"
+          alt="Image 4"
+          class="w-96 h-auto filter blur-sm shadow-2xl rounded-lg"
+        />
+        <p class="mt-2 text-xl text-gray-700">blur-sm</p>
+      </div>
+
+      <!--  contrast -->
+      <div class="flex flex-col items-center">
+        <img
+          src="../images/tiger.jpg"
+          alt="Image 5"
+          class="w-96 h-auto filter contrast-200 shadow-2xl rounded-lg"
+        />
+        <p class="mt-2 text-xl text-gray-700">contrast-200</p>
+      </div>
+    </div>
+  </body>
+</html>
