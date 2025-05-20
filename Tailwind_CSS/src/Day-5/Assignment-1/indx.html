@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Properties</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-screen p-16">
+    <h1 class="text-center text-black text-2xl font-bold">
+      CSS Transformation Properties(rotate, scale, translate)
+    </h1>
+    <div class="flex flex-wrap justify-center gap-16 p-10">
+      <div
+        class="w-[220px] h-[120px] bg-green-300 text-gray-800 text-center flex items-center justify-center transition-transform duration-1000 ease-in-out rounded-lg font-bold hover:transform hover:translate-x-10"
+      >
+        Translate X (40px)
+      </div>
+      <div
+        class="w-[220px] h-[120px] bg-green-300 text-gray-800 text-center flex items-center justify-center transition-transform duration-1000 ease-in-out rounded-lg font-bold hover:transform hover:-translate-y-8"
+      >
+        Translate Y (-30px)
+      </div>
+      <div
+        class="w-[220px] h-[120px] bg-green-300 text-gray-800 text-center flex items-center justify-center transition-transform duration-1000 ease-in-out rounded-lg font-bold hover:transform hover:translate-x-10 hover:-translate-y-10"
+      >
+        Translate XY (40px, -40px)
+      </div>
+      <div
+        class="w-[220px] h-[120px] bg-green-300 text-gray-800 text-center flex items-center justify-center transition-transform duration-1000 ease-in-out rounded-lg font-bold hover:transform hover:scale-x-150"
+      >
+        Scale X (1.5)
+      </div>
+      <div
+        class="w-[220px] h-[120px] bg-green-300 text-gray-800 text-center flex items-center justify-center transition-transform duration-1000 ease-in-out rounded-lg font-bold hover:transform hover:scale-y-150"
+      >
+        Scale Y (1.5)
+      </div>
+      <div
+        class="w-[220px] h-[120px] bg-green-300 text-gray-800 text-center flex items-center justify-center transition-transform duration-1000 ease-in-out rounded-lg font-bold hover:transform hover:scale-150"
+      >
+        Scale-xy (1.5)
+      </div>
+      <div
+        class="w-[220px] h-[120px] bg-green-300 text-gray-800 text-center flex items-center justify-center transition-transform duration-1000 ease-in-out rounded-lg font-bold hover:transform hover:rotate-180"
+      >
+        Clockwise Rotate(180deg)
+      </div>
+      <div
+        class="w-[220px] h-[120px] bg-green-300 text-gray-800 text-center flex items-center justify-center transition-transform duration-1000 ease-in-out rounded-lg font-bold hover:transform hover:-rotate-90"
+      >
+        Counter-Clockwise Rotate(-90deg)
+      </div>
+    </div>
+  </body>
+</html>

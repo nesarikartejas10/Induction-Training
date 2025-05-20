@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Visual Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .box {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 p-8">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-3xl font-bold text-center mb-10">Flexbox</h1>
+
+      <!-- Display: flex -->
+      <div class="mb-12">
+        <h2 class="text-xl font-semibold mb-4">1. flex</h2>
+        <div class="flex gap-4 p-6 bg-white rounded-lg shadow">
+          <div class="box bg-red-500">1</div>
+          <div class="box bg-blue-500">2</div>
+          <div class="box bg-green-500">3</div>
+        </div>
+      </div>
+
+      <!-- Flex Direction -->
+      <div class="mb-12">
+        <h2 class="text-xl font-semibold mb-4">2. Flex Direction</h2>
+
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">flex-row</h3>
+          <div class="flex flex-row gap-4 p-6 bg-white rounded-lg shadow">
+            <div class="box bg-red-500">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500">3</div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-medium mb-2">flex-col</h3>
+          <div class="flex flex-col gap-4 p-6 bg-white rounded-lg shadow h-64">
+            <div class="box bg-red-500">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500">3</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Justify Content -->
+      <div class="mb-12">
+        <h2 class="text-xl font-semibold mb-4">3. Justify Content</h2>
+
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">justify-start</h3>
+          <div class="flex justify-start gap-4 p-6 bg-white rounded-lg shadow">
+            <div class="box bg-red-500">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500">3</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">justify-center</h3>
+          <div class="flex justify-center gap-4 p-6 bg-white rounded-lg shadow">
+            <div class="box bg-red-500">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500">3</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">justify-end</h3>
+          <div class="flex justify-end gap-4 p-6 bg-white rounded-lg shadow">
+            <div class="box bg-red-500">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500">3</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">justify-between</h3>
+          <div class="flex justify-between p-6 bg-white rounded-lg shadow">
+            <div class="box bg-red-500">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500">3</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">justify-around</h3>
+          <div class="flex justify-around p-6 bg-white rounded-lg shadow">
+            <div class="box bg-red-500">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500">3</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">justify-evenly</h3>
+          <div class="flex justify-evenly p-6 bg-white rounded-lg shadow">
+            <div class="box bg-red-500">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500">3</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Align Items -->
+      <div class="mb-12">
+        <h2 class="text-xl font-semibold mb-4">4. Align Items</h2>
+
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">items-start</h3>
+          <div
+            class="flex items-start gap-4 p-6 bg-white rounded-lg shadow h-40"
+          >
+            <div class="box bg-red-500">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500">3</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">items-center</h3>
+          <div
+            class="flex items-center gap-4 p-6 bg-white rounded-lg shadow h-40"
+          >
+            <div class="box bg-red-500">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500">3</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">items-end</h3>
+          <div class="flex items-end gap-4 p-6 bg-white rounded-lg shadow h-40">
+            <div class="box bg-red-500">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500">3</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">items-baseline</h3>
+          <div
+            class="flex items-baseline gap-4 p-6 bg-white rounded-lg shadow h-40"
+          >
+            <div class="box bg-red-500 pt-6">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500 pt-12">3</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Align Content  -->
+      <div class="mb-12 max-w-[700px]">
+        <h2 class="text-xl font-semibold mb-4">5. Align Content</h2>
+
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">content-start</h3>
+          <div
+            class="flex flex-wrap content-start gap-4 p-6 bg-white rounded-lg shadow h-64"
+          >
+            <div class="box bg-red-500">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500">3</div>
+            <div class="box bg-yellow-500">4</div>
+            <div class="box bg-purple-500">5</div>
+            <div class="box bg-pink-500">6</div>
+            <div class="box bg-red-500">7</div>
+            <div class="box bg-blue-500">8</div>
+            <div class="box bg-green-500">9</div>
+            <div class="box bg-yellow-500">10</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">content-center</h3>
+          <div
+            class="flex flex-wrap content-center gap-4 p-6 bg-white rounded-lg shadow h-64"
+          >
+            <div class="box bg-red-500">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500">3</div>
+            <div class="box bg-yellow-500">4</div>
+            <div class="box bg-purple-500">5</div>
+            <div class="box bg-pink-500">6</div>
+            <div class="box bg-red-500">7</div>
+            <div class="box bg-blue-500">8</div>
+            <div class="box bg-green-500">9</div>
+            <div class="box bg-yellow-500">10</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">content-end</h3>
+          <div
+            class="flex flex-wrap content-end gap-4 p-6 bg-white rounded-lg shadow h-64"
+          >
+            <div class="box bg-red-500">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500">3</div>
+            <div class="box bg-yellow-500">4</div>
+            <div class="box bg-purple-500">5</div>
+            <div class="box bg-pink-500">6</div>
+            <div class="box bg-red-500">7</div>
+            <div class="box bg-blue-500">8</div>
+            <div class="box bg-green-500">9</div>
+            <div class="box bg-yellow-500">10</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">content-between</h3>
+          <div
+            class="flex flex-wrap content-between gap-4 p-6 bg-white rounded-lg shadow h-64"
+          >
+            <div class="box bg-red-500">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500">3</div>
+            <div class="box bg-yellow-500">4</div>
+            <div class="box bg-purple-500">5</div>
+            <div class="box bg-pink-500">6</div>
+            <div class="box bg-red-500">7</div>
+            <div class="box bg-blue-500">8</div>
+            <div class="box bg-green-500">9</div>
+            <div class="box bg-yellow-500">10</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">content-around</h3>
+          <div
+            class="flex flex-wrap content-around gap-4 p-6 bg-white rounded-lg shadow h-64"
+          >
+            <div class="box bg-red-500">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500">3</div>
+            <div class="box bg-yellow-500">4</div>
+            <div class="box bg-purple-500">5</div>
+            <div class="box bg-pink-500">6</div>
+            <div class="box bg-red-500">7</div>
+            <div class="box bg-blue-500">8</div>
+            <div class="box bg-green-500">9</div>
+            <div class="box bg-yellow-500">10</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">content-evenly</h3>
+          <div
+            class="flex flex-wrap content-evenly gap-4 p-6 bg-white rounded-lg shadow h-64"
+          >
+            <div class="box bg-red-500">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500">3</div>
+            <div class="box bg-yellow-500">4</div>
+            <div class="box bg-purple-500">5</div>
+            <div class="box bg-pink-500">6</div>
+            <div class="box bg-red-500">7</div>
+            <div class="box bg-blue-500">8</div>
+            <div class="box bg-green-500">9</div>
+            <div class="box bg-yellow-500">10</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Align Self -->
+      <div class="mb-12">
+        <h2 class="text-xl font-semibold mb-4">6. Align Self</h2>
+        <div class="flex gap-4 p-6 bg-white rounded-lg shadow h-40 items-start">
+          <div class="box bg-red-500">start</div>
+          <div class="box bg-blue-500 self-center">center</div>
+          <div class="box bg-green-500 self-end">end</div>
+          <div class="box bg-yellow-500 self-stretch">stretch</div>
+          <div class="box bg-purple-500 self-baseline">baseline</div>
+        </div>
+      </div>
+
+      <!-- Flex Wrap -->
+      <div class="mb-12 max-w-[500px]">
+        <h2 class="text-xl font-semibold mb-4">7. Flex Wrap</h2>
+
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">flex-nowrap</h3>
+          <div
+            class="flex justify-center flex-nowrap gap-4 p-6 bg-white rounded-lg shadow"
+          >
+            <div class="box bg-red-500">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500">3</div>
+            <div class="box bg-yellow-500">4</div>
+            <div class="box bg-purple-500">5</div>
+            <div class="box bg-pink-500">6</div>
+            <div class="box bg-red-500">7</div>
+            <div class="box bg-blue-500">8</div>
+            <div class="box bg-green-500">9</div>
+            <div class="box bg-yellow-500">10</div>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">flex-wrap</h3>
+          <div class="flex flex-wrap gap-4 p-6 bg-white rounded-lg shadow">
+            <div class="box bg-red-500">1</div>
+            <div class="box bg-blue-500">2</div>
+            <div class="box bg-green-500">3</div>
+            <div class="box bg-yellow-500">4</div>
+            <div class="box bg-purple-500">5</div>
+            <div class="box bg-pink-500">6</div>
+            <div class="box bg-red-500">7</div>
+            <div class="box bg-blue-500">8</div>
+            <div class="box bg-green-500">9</div>
+            <div class="box bg-yellow-500">10</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
