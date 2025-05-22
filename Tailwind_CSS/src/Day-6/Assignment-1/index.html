@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Grid Classes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .grid-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: white;
+        min-height: 80px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 p-8">
+    <div class="max-w-6xl mx-auto">
+      <h1 class="text-3xl font-bold text-center mb-10">
+        Tailwind Grid Classes
+      </h1>
+
+      <!-- grid with gap -->
+      <div class="mb-12 max-w-[700px]">
+        <h2 class="text-xl font-semibold mb-4">1. display grid with gap</h2>
+        <div
+          class="grid grid-cols-3 gap-x-4 gap-y-4 p-6 bg-white rounded-lg shadow"
+        >
+          <div class="grid-box bg-red-500">1</div>
+          <div class="grid-box bg-blue-500">2</div>
+          <div class="grid-box bg-green-500">3</div>
+          <div class="grid-box bg-yellow-500">4</div>
+          <div class="grid-box bg-purple-500">5</div>
+          <div class="grid-box bg-pink-500">6</div>
+        </div>
+      </div>
+
+      <!-- grid with no gap-->
+      <div class="mb-12 max-w-[700px]">
+        <h2 class="text-xl font-semibold mb-4">2. display grid with no gap</h2>
+        <div class="grid grid-cols-3 p-6 bg-white rounded-lg shadow">
+          <div class="grid-box bg-red-500">1</div>
+          <div class="grid-box bg-blue-500">2</div>
+          <div class="grid-box bg-green-500">3</div>
+          <div class="grid-box bg-yellow-500">4</div>
+          <div class="grid-box bg-purple-500">5</div>
+          <div class="grid-box bg-pink-500">6</div>
+        </div>
+      </div>
+
+      <!-- Grid Template Columns -->
+      <div class="mb-12 max-w-[700px]">
+        <h2 class="text-xl font-semibold mb-4">3. Grid Template Columns</h2>
+
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">grid-cols-3</h3>
+          <div class="grid grid-cols-3 gap-4 p-6 bg-white rounded-lg shadow">
+            <div class="grid-box bg-red-500">1</div>
+            <div class="grid-box bg-blue-500">2</div>
+            <div class="grid-box bg-green-500">3</div>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-medium mb-2">grid-cols-[100px,1fr,200px]</h3>
+          <div
+            class="grid grid-cols-[100px,1fr,200px] gap-4 p-6 bg-white rounded-lg shadow"
+          >
+            <div class="grid-box bg-red-500">100px</div>
+            <div class="grid-box bg-blue-500">1fr</div>
+            <div class="grid-box bg-green-500">200px</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grid Template Rows -->
+      <div class="mb-12 max-w-[700px]">
+        <h2 class="text-xl font-semibold mb-4">4. Grid Template Rows</h2>
+
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">grid-rows-3</h3>
+          <div
+            class="grid grid-rows-3 gap-4 p-6 bg-white rounded-lg shadow h-80"
+          >
+            <div class="grid-box bg-red-500">1</div>
+            <div class="grid-box bg-blue-500">2</div>
+            <div class="grid-box bg-green-500">3</div>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-medium mb-2">grid-rows-[100px,1fr,50px]</h3>
+          <div
+            class="grid grid-rows-[100px,1fr,50px] gap-4 p-6 bg-white rounded-lg shadow"
+          >
+            <div class="grid-box bg-red-500">100px</div>
+            <div class="grid-box bg-blue-500">1fr</div>
+            <div class="grid-box bg-green-500">50px</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grid Column and Grid Row -->
+      <div class="mb-12 max-w-[700px]">
+        <h2 class="text-xl font-semibold mb-4">5. Grid Column and Grid row</h2>
+
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">col-start-1 / col-end-3</h3>
+          <div class="grid grid-cols-3 gap-4 p-6 bg-white rounded-lg shadow">
+            <div class="grid-box bg-red-500 col-start-1 col-end-3">
+              col-start-1 / col-end-3
+            </div>
+            <div class="grid-box bg-blue-500">3</div>
+            <div class="grid-box bg-green-500">4</div>
+            <div class="grid-box bg-yellow-500">5</div>
+            <div class="grid-box bg-purple-500">6</div>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">row-start-1 / row-end-3</h3>
+          <div class="grid grid-cols-3 gap-4 p-6 bg-white rounded-lg shadow">
+            <div class="grid-box bg-red-500">2</div>
+            <div class="grid-box bg-blue-500">3</div>
+            <div class="grid-box bg-green-500 row-start-1 row-end-3">
+              row-start-1 / row-end-3
+            </div>
+            <div class="grid-box bg-yellow-500">5</div>
+            <div class="grid-box bg-purple-500">6</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Justify Items -->
+      <div class="mb-12 max-w-[700px]">
+        <h2 class="text-xl font-semibold mb-4">6. Justify Items</h2>
+
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">justify-items-start</h3>
+          <div
+            class="grid grid-cols-3 gap-2 p-6 bg-white rounded-lg shadow justify-items-start"
+          >
+            <div class="grid-box bg-red-500 w-1/2">1</div>
+            <div class="grid-box bg-blue-500 w-1/2">2</div>
+            <div class="grid-box bg-green-500 w-1/2">3</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">justify-items-center</h3>
+          <div
+            class="grid grid-cols-3 gap-2 p-6 bg-white rounded-lg shadow justify-items-center"
+          >
+            <div class="grid-box bg-red-500 w-1/2">1</div>
+            <div class="grid-box bg-blue-500 w-1/2">2</div>
+            <div class="grid-box bg-green-500 w-1/2">3</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">justify-items-end</h3>
+          <div
+            class="grid grid-cols-3 gap-2 p-6 bg-white rounded-lg shadow justify-items-end"
+          >
+            <div class="grid-box bg-red-500 w-1/2">1</div>
+            <div class="grid-box bg-blue-500 w-1/2">2</div>
+            <div class="grid-box bg-green-500 w-1/2">3</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">justify-items-stretch</h3>
+          <div
+            class="grid grid-cols-3 gap-2 p-6 bg-white rounded-lg shadow justify-items-stretch"
+          >
+            <div class="grid-box bg-red-500">1</div>
+            <div class="grid-box bg-blue-500">2</div>
+            <div class="grid-box bg-green-500">3</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Align Items -->
+      <div class="mb-12 max-w-[700px]">
+        <h2 class="text-xl font-semibold mb-4">7. Align Items</h2>
+
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">items-start</h3>
+          <div
+            class="grid grid-cols-3 gap-4 p-6 bg-white rounded-lg shadow h-56 items-start"
+          >
+            <div class="grid-box bg-red-500 h-1/2">1</div>
+            <div class="grid-box bg-blue-500 h-1/2">2</div>
+            <div class="grid-box bg-green-500 h-1/2">3</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">items-center</h3>
+          <div
+            class="grid grid-cols-3 gap-4 p-6 bg-white rounded-lg shadow h-56 items-center"
+          >
+            <div class="grid-box bg-red-500 h-1/2">1</div>
+            <div class="grid-box bg-blue-500 h-1/2">2</div>
+            <div class="grid-box bg-green-500 h-1/2">3</div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">items-end</h3>
+          <div
+            class="grid grid-cols-3 gap-4 p-6 bg-white rounded-lg shadow h-56 items-end"
+          >
+            <div class="grid-box bg-red-500 h-1/2">1</div>
+            <div class="grid-box bg-blue-500 h-1/2">2</div>
+            <div class="grid-box bg-green-500 h-1/2">3</div>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-medium mb-2">items-stretch</h3>
+          <div
+            class="grid grid-cols-3 gap-4 p-6 bg-white rounded-lg shadow h-56 items-stretch"
+          >
+            <div class="grid-box bg-red-500">1</div>
+            <div class="grid-box bg-blue-500">2</div>
+            <div class="grid-box bg-green-500">3</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Justify Self & Align Self -->
+      <div class="mb-12 max-w-[700px]">
+        <h2 class="text-xl font-semibold mb-4">8. Justify Self & Align Self</h2>
+
+        <div class="mb-4">
+          <h3 class="font-medium mb-2">justify-self</h3>
+          <div
+            class="grid grid-cols-4 gap-4 p-6 bg-white rounded-lg shadow h-32"
+          >
+            <div class="grid-box bg-red-500 justify-self-start">start</div>
+            <div class="grid-box bg-blue-500 justify-self-center">center</div>
+            <div class="grid-box bg-green-500 justify-self-end">end</div>
+            <div class="grid-box bg-purple-500 justify-self-stretch">
+              stretch
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-medium mb-2">align-self</h3>
+          <div
+            class="grid grid-cols-4 gap-4 p-6 bg-white rounded-lg shadow h-56 items-start"
+          >
+            <div class="grid-box bg-red-500 self-start">start</div>
+            <div class="grid-box bg-blue-500 self-center">center</div>
+            <div class="grid-box bg-green-500 self-end">end</div>
+            <div class="grid-box bg-purple-500 self-stretch">stretch</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order -->
+      <div class="mb-12 max-w-[700px]">
+        <h2 class="text-xl font-semibold mb-4">9. Order</h2>
+        <div class="grid grid-cols-3 gap-4 p-6 bg-white rounded-lg shadow">
+          <div class="grid-box bg-red-500 order-3">1 (order-3)</div>
+          <div class="grid-box bg-blue-500 order-1">2 (order-1)</div>
+          <div class="grid-box bg-green-500 order-2">3 (order-2)</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
