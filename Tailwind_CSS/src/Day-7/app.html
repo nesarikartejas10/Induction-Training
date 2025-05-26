@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Config</title>
+    <link rel="stylesheet" href="../output.css" />
+  </head>
+  <body>
+    <body class="bg-brandLight font-sans">
+      <section class="max-w-6xl mx-auto py-12 px-4">
+        <h2 class="text-huge text-brandDark font-bold text-center mb-10">
+          Card Section
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-brandBlue rounded-lg p-6 shadow-soft text-brandDark">
+            <h3 class="text-xl font-semibold mb-2">Soft Shadow</h3>
+            <p class="text-tiny">This card uses a soft shadow and tiny text.</p>
+          </div>
+
+          <div class="bg-brandLight rounded-lg p-6 shadow-medium">
+            <h3 class="text-lg font-semibold mb-2">Medium Shadow</h3>
+            <p class="text-sm">
+              This card uses a medium shadow and brand color background.
+            </p>
+          </div>
+
+          <div class="bg-brandDark rounded-lg p-6 shadow-hard text-brandDark">
+            <h3 class="text-huge font-bold mb-2">Hard Shadow</h3>
+            <p class="text-base">
+              This card uses a hard shadow and huge heading.
+            </p>
+          </div>
+        </div>
+      </section>
+    </body>
+  </body>
+</html>

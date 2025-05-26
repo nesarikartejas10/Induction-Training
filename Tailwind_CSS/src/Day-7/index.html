@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Tailwind CSS</title>
+    <link href="../output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 text-gray-900 font-modern">
+    <!-- Header -->
+    <header class="bg-dark text-white p-section border-orange shadow-deep">
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <h1 class="text-xxl-custom font-bold">MyWebSite</h1>
+        <nav class="flex gap-4">
+          <a href="#" class="hover:text-primary">Home</a>
+          <a href="#" class="hover:text-primary">Projects</a>
+          <a href="#" class="hover:text-primary">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section
+      class="bg-banner w-banner h-banner flex items-center justify-center text-white text-center"
+    >
+      <div class="bg-black opacity-md p-4 rounded">
+        <h2 class="text-xl-custom font-semibold">Welcome to my website</h2>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="p-section">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white p-6 m-card border-orange shadow-deep rounded-xl">
+          <h3 class="text-xl-custom text-primary font-semibold mb-2">HTML</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            praesentium minima impedit cupiditate. Unde obcaecati doloremque
+            molestiae hic libero voluptatem vero ducimus facilis facere minima?
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white p-6 m-card border-orange shadow-deep rounded-xl">
+          <h3 class="text-xl-custom text-primary font-semibold mb-2">CSS</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ad.
+            Officiis nostrum harum fugit rerum, at dolorem assumenda a,
+            inventore aspernatur, eligendi odio reprehenderit dicta.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white p-6 m-card border-orange shadow-deep rounded-xl">
+          <h3 class="text-xl-custom text-primary font-semibold mb-2">
+            JavaScript
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus a
+            libero, illum aperiam debitis ducimus numquam doloribus porro ad
+            repellendus, ratione deleniti possimus dolore dolor?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-dark text-white text-center p-6 border-orange shadow-deep"
+    >
+      <p>&copy; 2025 Tailwind Utility Page</p>
+    </footer>
+  </body>
+</html>

@@ -1,1 +1,57 @@
 @import "tailwindcss";
+@tailwind utilities;
+@config "./Day-7/tailwind.config.js";
+
+@layer utilities {
+  .text-primary {
+    @apply text-sky-500;
+  }
+
+  .bg-dark {
+    @apply bg-slate-800;
+  }
+
+  .font-modern {
+    @apply font-sans;
+  }
+
+  .text-xl-custom {
+    @apply text-xl;
+  }
+
+  .text-xxl-custom {
+    @apply text-2xl;
+  }
+
+  .p-section {
+    @apply py-4 px-4;
+  }
+
+  .m-card {
+    @apply my-6;
+  }
+
+  .opacity-md {
+    @apply opacity-50;
+  }
+
+  .border-orange {
+    @apply border-2 border-amber-500;
+  }
+
+  .shadow-deep {
+    @apply shadow-lg;
+  }
+
+  .bg-banner {
+    @apply bg-[url('./Day-7/images/nature.jpg')] bg-cover bg-center bg-no-repeat;
+  }
+
+  .w-banner {
+    @apply w-full;
+  }
+
+  .h-banner {
+    @apply h-[500px];
+  }
+}
