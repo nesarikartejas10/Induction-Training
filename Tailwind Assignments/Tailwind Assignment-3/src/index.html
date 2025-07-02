@@ -18,10 +18,62 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="output.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .scroll-animation {
+        animation: scroll 20s linear infinite;
+      }
+    </style>
   </head>
-  <body style="font-family: 'Outfit', sans-serif">
-    <div class="border border-[#edf2f7] border-solid">
-      <header
+  <body style="font-family: 'Outfit', sans-serif" class="lg:relative">
+    <div
+      class="hidden md:hidden lg:fixed lg:right-0 lg:top-[35%] lg:z-30 lg:p-2.5 lg:flex lg:flex-col lg:gap-5 lg:items-center lg:bg-white lg:rounded-tl-xl lg:rounded-bl-xl lg:shadow"
+    >
+      <div class="group border-b border-solid border-[#acaaaa]">
+        <i
+          title="KeyDesign Framework"
+          class="fa-solid fa-gear group-hover:text-[#5A63D3] transition-colors duration-500 ease-in-out"
+        ></i>
+      </div>
+      <div class="group border-b border-solid border-[#acaaaa]">
+        <i
+          title="Customer Support"
+          class="fa-solid fa-life-ring group-hover:text-[#5A63D3] transition-colors duration-500 ease-in-out"
+        ></i>
+      </div>
+      <div class="group border-b border-solid border-[#acaaaa]">
+        <i
+          title="Read Documentation"
+          class="fa-solid fa-file-invoice group-hover:text-[#5A63D3] transition-colors duration-500 ease-in-out"
+        ></i>
+      </div>
+      <div class="group border-b border-solid border-[#acaaaa]">
+        <i
+          title="User Community"
+          class="fa-regular fa-circle-user group-hover:text-[#5A63D3] transition-colors duration-500 ease-in-out"
+        ></i>
+      </div>
+      <div class="group border-b border-solid border-[#acaaaa]">
+        <i
+          title="Purchase Joule"
+          class="fa-solid fa-cart-shopping group-hover:text-[#5A63D3] transition-colors duration-500 ease-in-out"
+        ></i>
+      </div>
+    </div>
+
+    <header class="border border-[#edf2f7] border-solid" id="header">
+      <div
         class="flex justify-between items-center px-2.5 lg:max-w-[1250px] lg:mx-auto lg:justify-start lg:py-2.5"
       >
         <img
@@ -42,7 +94,7 @@
 
         <div class="hidden lg:flex lg:p-2.5 lg:gap-2.5 lg:font-medium lg:ml-56">
           <div
-            class="lg:px-[19px] lg:py-3 lg:text-[#5A63D3] lg:border lg:border-solid lg:border-[#5A63D3] lg:rounded-xl"
+            class="lg:px-[19px] lg:py-3 lg:text-[#5A63D3] lg:border lg:border-solid lg:border-[#5A63D3] lg:rounded-xl lg:transition-colors lg:duration-400 lg:ease-in-out lg:hover:bg-[#5A63D3] lg:hover:text-white"
           >
             <a
               href="https://joule.keydesign.xyz/ai-analytics-tool/request-demo/"
@@ -51,7 +103,7 @@
           </div>
 
           <div
-            class="lg:px-5 lg:py-3 lg:bg-[#5A63D3] lg:text-white lg:rounded-xl"
+            class="lg:border lg:border-transparent lg:px-5 lg:py-3 lg:bg-[#5A63D3] lg:text-white lg:rounded-xl lg:transition-colors lg:duration-400 lg:ease-in-out lg:hover:bg-white lg:hover:text-[#5A63D3] lg:hover:border lg:hover:border-[#5A63D3]"
           >
             <button>Contact sales</button>
           </div>
@@ -60,93 +112,164 @@
         <div class="block px-2.5 text-xl lg:hidden">
           <i class="fa-solid fa-bars"></i>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
 
     <section
-      class="pt-[30px] pb-10 md:pt-20 md:pb-[100px] lg:max-w-[1250px] lg:mx-auto"
+      class="bg-[url('https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/joule-pattern.svg')]w-full h-full bg-no-repeat bg-cover bg-center"
     >
       <div
-        class="p-2.5 grid grid-cols-1 gap-[25px] md:grid-cols-2 md:mb-[90px] lg:gap-[30px]"
+        class="pt-[30px] pb-10 md:pt-20 md:pb-[100px] lg:max-w-[1250px] lg:mx-auto"
       >
         <div
-          class="p-2.5 flex flex-col justify-center items-start gap-[30px] lg:gap-10"
-        >
-          <div>
-            <h6
-              class="inline-block px-3 py-2 mb-[22px] bg-[#EFEFFB] text-[#5A63D3] rounded"
-            >
-              Smarter Sales Insights
-            </h6>
-            <h1
-              class="text-[32px] font-medium leading-[38.4px] mb-[22px] md:text-[44px] md:leading-[52.8px] lg:text-[64px] lg:leading-[76.8px]"
-            >
-              <span
-                class="shadow-[inset_0_-11px_0_0_#EFEFFB] md:shadow-[inset_0_-13px_0_0_#EFEFFB] lg:shadow-[inset_0_-15px_0_0_#EFEFFB]"
-                >Analytics</span
-              >
-              that drive better decisions
-            </h1>
-            <p
-              class="leading-7 text-[#64748B] lg:text-xl lg:leading-[35px] lg:pr-32"
-            >
-              Streamline your sales team's tasks and optimize daily operations
-              for higher performance.
-            </p>
-          </div>
-
-          <button
-            class="px-6 py-4 bg-[#5A63D3] text-white rounded-xl text-[15px] font-medium"
-          >
-            <a href="https://joule.keydesign.xyz/ai-analytics-tool/pricing/">
-              Get started
-            </a>
-          </button>
-        </div>
-
-        <div
-          class="mx-2.5 p-3 border border-solid border-[#edf2f7] rounded-xl md:h-[315px] lg:h-auto"
+          class="p-2.5 grid grid-cols-1 gap-[25px] md:grid-cols-2 md:mb-[90px] lg:gap-[30px]"
         >
           <div
-            class="px-7 pt-7 bg-[#EFEFFB] rounded-xl lg:flex lg:justify-center lg:px-0"
+            class="p-2.5 flex flex-col justify-center items-start gap-[30px] lg:gap-10"
           >
-            <img
-              src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/joule-analytics-hero.png"
-              alt="Sales Analytics"
-            />
+            <div>
+              <h6
+                class="inline-block px-3 py-2 mb-[22px] bg-[#EFEFFB] text-[#5A63D3] rounded"
+              >
+                Smarter Sales Insights
+              </h6>
+              <h1
+                class="text-[32px] font-medium leading-[38.4px] mb-[22px] md:text-[44px] md:leading-[52.8px] lg:text-[64px] lg:leading-[76.8px]"
+              >
+                <span
+                  class="shadow-[inset_0_-11px_0_0_#EFEFFB] md:shadow-[inset_0_-13px_0_0_#EFEFFB] lg:shadow-[inset_0_-15px_0_0_#EFEFFB]"
+                  >Analytics</span
+                >
+                that drive better decisions
+              </h1>
+              <p
+                class="leading-7 text-[#64748B] lg:text-xl lg:leading-[35px] lg:pr-32"
+              >
+                Streamline your sales team's tasks and optimize daily operations
+                for higher performance.
+              </p>
+            </div>
+
+            <button
+              class="px-6 py-4 bg-[#5A63D3] text-white rounded-xl text-[15px] font-medium border border-transparent lg:transition-all lg:duration-400 lg:ease-in-out lg:hover:bg-white lg:hover:text-[#5A63D3] lg:hover:border lg:border-[#5A63D3]"
+            >
+              <a href="https://joule.keydesign.xyz/ai-analytics-tool/pricing/">
+                Get started
+              </a>
+            </button>
+          </div>
+
+          <div
+            class="mx-2.5 p-3 border border-solid border-[#edf2f7] rounded-xl md:h-[315px] lg:h-auto"
+          >
+            <div
+              class="px-7 pt-7 bg-[#EFEFFB] rounded-xl lg:flex lg:justify-center lg:px-0"
+            >
+              <img
+                src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/joule-analytics-hero.png"
+                alt="Sales Analytics"
+              />
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="hidden md:flex md:justify-center md:items-center">
-        <div class="md:mx-10">
-          <img
-            src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/logo-1.svg"
-            alt="logo-1"
-          />
-        </div>
-        <div class="md:mx-10">
-          <img
-            src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/logo-2.svg"
-            alt="logo-2"
-          />
-        </div>
-        <div class="md:mx-10">
-          <img
-            src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/logo-3.svg"
-            alt="logo-3"
-          />
-        </div>
-        <div class="md:mx-10">
-          <img
-            src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/logo-4.svg"
-            alt="logo-4"
-          />
+        <div class="hidden md:block overflow-hidden w-full py-4 bg-white">
+          <div
+            class="flex scroll-animation w-fit whitespace-nowrap md:gap-20 lg:gap-28"
+          >
+            <div class="h-10 shrink-0">
+              <img
+                src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/logo-1.svg"
+                alt="logo-1"
+                class="h-full"
+              />
+            </div>
+            <div class="h-10 shrink-0">
+              <img
+                src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/logo-2.svg"
+                alt="logo-2"
+                class="h-full"
+              />
+            </div>
+            <div class="h-10 shrink-0">
+              <img
+                src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/logo-3.svg"
+                alt="logo-3"
+                class="h-full"
+              />
+            </div>
+            <div class="h-10 shrink-0">
+              <img
+                src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/logo-4.svg"
+                alt="logo-4"
+                class="h-full"
+              />
+            </div>
+            <div class="h-10 shrink-0">
+              <img
+                src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/logo-5.svg"
+                alt="logo-5"
+                class="h-full"
+              />
+            </div>
+            <div class="h-10 shrink-0">
+              <img
+                src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/logo-6.svg"
+                alt="logo-6"
+                class="h-full"
+              />
+            </div>
+
+            <div class="h-10 shrink-0">
+              <img
+                src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/logo-1.svg"
+                alt="logo-1"
+                class="h-full"
+              />
+            </div>
+            <div class="h-10 shrink-0">
+              <img
+                src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/logo-2.svg"
+                alt="logo-2"
+                class="h-full"
+              />
+            </div>
+            <div class="h-10 shrink-0">
+              <img
+                src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/logo-3.svg"
+                alt="logo-3"
+                class="h-full"
+              />
+            </div>
+            <div class="h-10 shrink-0">
+              <img
+                src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/logo-4.svg"
+                alt="logo-4"
+                class="h-full"
+              />
+            </div>
+            <div class="h-10 shrink-0">
+              <img
+                src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/logo-5.svg"
+                alt="logo-5"
+                class="h-full"
+              />
+            </div>
+            <div class="h-10 shrink-0">
+              <img
+                src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/logo-6.svg"
+                alt="logo-6"
+                class="h-full"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="bg-[#141A3E] px-2.5 py-10 lg:pt-20 lg:pb-[100px]">
+    <section
+      class="bg-[url('https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/joule-pattern.svg')] w-full h-full bg-center bg-[#141A3E] px-2.5 py-10 lg:pt-20 lg:pb-[100px]"
+    >
       <div
         class="flex flex-col justify-center items-center md:gap-8 lg:max-w-[1250px] lg:mx-auto"
       >
@@ -288,7 +411,7 @@
             </div>
 
             <button
-              class="px-6 py-4 text-[#5A63D3] bg-white rounded-xl text-[15px] font-medium border border-[#5A63D3] border-solid"
+              class="px-6 py-4 text-[#5A63D3] bg-white rounded-xl text-[15px] font-medium border border-[#5A63D3] border-solid lg:transition-colors lg:duration-400 lg:ease-in-out lg:hover:bg-[#5A63D3] lg:hover:text-white"
             >
               <a href="https://joule.keydesign.xyz/ai-analytics-tool/features/">
                 Get started
@@ -341,7 +464,7 @@
             </div>
 
             <button
-              class="px-6 py-4 text-[#5A63D3] bg-white rounded-xl text-[15px] font-medium border border-[#5A63D3] border-solid"
+              class="px-6 py-4 text-[#5A63D3] bg-white rounded-xl text-[15px] font-medium border border-[#5A63D3] border-solid lg:transition-colors lg:duration-400 lg:ease-in-out lg:hover:bg-[#5A63D3] lg:hover:text-white"
             >
               <a href="https://joule.keydesign.xyz/ai-analytics-tool/features/">
                 Get started
@@ -394,7 +517,7 @@
             </div>
 
             <button
-              class="px-6 py-4 text-[#5A63D3] bg-white rounded-xl text-[15px] font-medium border border-[#5A63D3] border-solid"
+              class="px-6 py-4 text-[#5A63D3] bg-white rounded-xl text-[15px] font-medium border border-[#5A63D3] border-solid lg:transition-colors lg:duration-400 lg:ease-in-out lg:hover:bg-[#5A63D3] lg:hover:text-white"
             >
               <a href="https://joule.keydesign.xyz/ai-analytics-tool/features/">
                 Get started
@@ -450,10 +573,10 @@
           class="px-2.5 grid grid-cols-1 gap-5 md:grid-cols-3 lg:max-w-[1250px] lg:mx-auto lg:gap-[30px]"
         >
           <div
-            class="bg-white rounded-xl p-5 shadow md:order-1 group lg:transition-transform lg:duration-300 lg:hover:-translate-y-2"
+            class="bg-white rounded-xl p-5 shadow md:order-1 group lg:transition-transform lg:duration-400 lg:hover:-translate-y-2"
           >
             <div
-              class="inline-block p-[18px] mb-[30px] rounded-2xl bg-[#FAFAFC] transition-colors duration-300 lg:group-hover:bg-[#EFEFFB]"
+              class="inline-block p-[18px] mb-[30px] rounded-2xl bg-[#FAFAFC] transition-colors duration-400 lg:group-hover:bg-[#EFEFFB]"
             >
               <img
                 src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/joule-icon-1.svg"
@@ -470,10 +593,10 @@
           </div>
 
           <div
-            class="bg-white rounded-xl p-5 shadow md:order-4 group lg:transition-transform lg:duration-300 lg:hover:-translate-y-2"
+            class="bg-white rounded-xl p-5 shadow md:order-4 group lg:transition-transform lg:duration-400 lg:hover:-translate-y-2"
           >
             <div
-              class="inline-block p-[18px] mb-[30px] rounded-2xl bg-[#FAFAFC] transition-colors duration-300 lg:group-hover:bg-[#EFEFFB]"
+              class="inline-block p-[18px] mb-[30px] rounded-2xl bg-[#FAFAFC] transition-colors duration-400 lg:group-hover:bg-[#EFEFFB]"
             >
               <img
                 src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/joule-icon-4.svg"
@@ -490,10 +613,10 @@
           </div>
 
           <div
-            class="bg-white rounded-xl p-5 shadow md:order-2 group lg:transition-transform lg:duration-300 lg:hover:-translate-y-2"
+            class="bg-white rounded-xl p-5 shadow md:order-2 group lg:transition-transform lg:duration-400 lg:hover:-translate-y-2"
           >
             <div
-              class="inline-block p-[18px] mb-[30px] rounded-2xl bg-[#FAFAFC] transition-colors duration-300 lg:group-hover:bg-[#EFEFFB]"
+              class="inline-block p-[18px] mb-[30px] rounded-2xl bg-[#FAFAFC] transition-colors duration-400 lg:group-hover:bg-[#EFEFFB]"
             >
               <img
                 src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/joule-icon-2.svg"
@@ -512,10 +635,10 @@
           </div>
 
           <div
-            class="bg-white rounded-xl p-5 shadow md:order-5 group lg:transition-transform lg:duration-300 lg:hover:-translate-y-2"
+            class="bg-white rounded-xl p-5 shadow md:order-5 group lg:transition-transform lg:duration-400 lg:hover:-translate-y-2"
           >
             <div
-              class="inline-block p-[18px] mb-[30px] rounded-2xl bg-[#FAFAFC] transition-colors duration-300 lg:group-hover:bg-[#EFEFFB]"
+              class="inline-block p-[18px] mb-[30px] rounded-2xl bg-[#FAFAFC] transition-colors duration-400 lg:group-hover:bg-[#EFEFFB]"
             >
               <img
                 src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/joule-icon-5.svg"
@@ -532,10 +655,10 @@
           </div>
 
           <div
-            class="bg-white rounded-xl p-5 shadow md:order-3 group lg:transition-transform lg:duration-300 lg:hover:-translate-y-2"
+            class="bg-white rounded-xl p-5 shadow md:order-3 group lg:transition-transform lg:duration-400 lg:hover:-translate-y-2"
           >
             <div
-              class="inline-block p-[18px] mb-[30px] rounded-2xl bg-[#FAFAFC] transition-colors duration-300 lg:group-hover:bg-[#EFEFFB]"
+              class="inline-block p-[18px] mb-[30px] rounded-2xl bg-[#FAFAFC] transition-colors duration-400 lg:group-hover:bg-[#EFEFFB]"
             >
               <img
                 src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/joule-icon-3.svg"
@@ -554,10 +677,10 @@
           </div>
 
           <div
-            class="bg-white rounded-xl p-5 shadow md:order-6 group lg:transition-transform lg:duration-300 lg:hover:-translate-y-2"
+            class="bg-white rounded-xl p-5 shadow md:order-6 group lg:transition-transform lg:duration-400 lg:hover:-translate-y-2"
           >
             <div
-              class="inline-block p-[18px] mb-[30px] rounded-2xl bg-[#FAFAFC] transition-colors duration-300 lg:group-hover:bg-[#EFEFFB]"
+              class="inline-block p-[18px] mb-[30px] rounded-2xl bg-[#FAFAFC] transition-colors duration-400 lg:group-hover:bg-[#EFEFFB]"
             >
               <img
                 src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/joule-icon-6.svg"
@@ -576,8 +699,9 @@
       </div>
     </section>
 
-    <!-- Remaining -->
-    <section class="bg-[#141A3E] px-2.5 py-10 lg:pt-20 lg:pb-[100px]">
+    <section
+      class="bg-[url('https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/joule-pattern.svg')] w-full h-full bg-center bg-[#141A3E] px-2.5 py-10 lg:pt-20 lg:pb-[100px]"
+    >
       <div
         class="flex flex-col justify-center items-center md:gap-8 lg:max-w-[1250px] lg:mx-auto"
       >
@@ -608,7 +732,7 @@
           >
             <div class="md:flex md:flex-col">
               <h4
-                class="p-2.5 text-[18px] font-medium leading-[25.92px] md:text-2xl md:leading-[34.56px] md:text-[#FFFFFF99]"
+                class="p-2.5 text-[18px] font-medium leading-[25.92px] md:text-2xl md:leading-[34.56px] md:text-[#FFFFFF99] lg:p-10"
               >
                 Give your team the tools they need to deliver experiences that
                 convert, every time.
@@ -637,7 +761,7 @@
 
               <div class="inline-block mb-5 lg:mt-auto">
                 <button
-                  class="px-4 py-3 bg-[#5A63D3] text-white rounded-2xl font-medium"
+                  class="px-4 py-3 bg-[#5A63D3] text-white rounded-2xl font-medium lg:transition-colors lg:duration-400 lg:ease-in-out lg:hover:bg-white lg:hover:text-[#0F132E]"
                 >
                   Explore integrations
                 </button>
@@ -645,7 +769,7 @@
             </div>
 
             <div
-              class="grid grid-cols-1 gap-2 md:grid-cols-2 md:grid-rows-3 md:gap-3 lg:basis-[240px]"
+              class="grid grid-cols-1 gap-2 md:grid-cols-2 md:grid-rows-3 md:gap-3 lg:basis-[240px] lg:py-10"
             >
               <div class="p-[15px] bg-[#0F132E] rounded-xl">
                 <img
@@ -725,7 +849,7 @@
           </div>
 
           <button
-            class="px-6 py-4 text-[#5A63D3] bg-white rounded-xl text-[15px] font-medium border border-[#5A63D3] border-solid"
+            class="px-6 py-4 text-[#5A63D3] bg-white rounded-xl text-[15px] font-medium border border-[#5A63D3] border-solid lg:transition-colors lg:duration-400 lg:ease-in-out lg:hover:bg-[#5A63D3] lg:hover:text-white"
           >
             <a href="https://joule.keydesign.xyz/ai-analytics-tool/features/">
               See case studies
@@ -831,7 +955,7 @@
       class="px-5 pt-[30px] pb-10 md:pt-20 md:pb-[100px] lg:max-w-[1250px] lg:mx-auto"
     >
       <div
-        class="bg-[#5A63D3] px-2.5 py-10 rounded-2xl md:text-center md:px-5 md:py-[50px]"
+        class="bg-[url('https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/joule-pattern.svg')] w-full h-full bg-no-repeat bg-cover bg-center bg-[#5A63D3] px-2.5 py-10 rounded-2xl md:text-center md:px-5 md:py-[50px]"
       >
         <div
           class="p-2.5 flex flex-col justify-center items-start gap-[30px] lg:gap-10 lg:max-w-[650px] lg:mx-auto"
@@ -857,7 +981,7 @@
 
           <div class="mx-auto">
             <button
-              class="px-6 py-4 bg-white text-[#5A63D3] rounded-xl text-[15px] font-medium"
+              class="px-6 py-4 bg-white text-[#5A63D3] rounded-xl text-[15px] font-medium lg:py-[19px] lg:text-[18px]"
             >
               <a href="https://joule.keydesign.xyz/ai-analytics-tool/pricing/">
                 Get started
@@ -872,6 +996,7 @@
       <div class="pt-[30px] pb-5 flex flex-col gap-2.5 md:flex-row md:gap-0">
         <div class="p-2.5 md:basis-[243px] lg:basis-[445px]">
           <img
+            class="lg:cursor-pointer"
             src="https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/09/joule-logo.svg"
             alt="joule-logo"
           />
@@ -893,16 +1018,24 @@
             <ul
               class="text-[14px] leading-[22.5px] text-[#060B25] lg:text-[16px] lg:leading-[25.6px]"
             >
-              <li class="pb-[5px]">
+              <li
+                class="pb-[5px] lg:hover:text-[#5A63D3] transition-all duration-500 ease-in-out"
+              >
                 <a href="https://keydesign.xyz/page-builder/">Page builder</a>
               </li>
-              <li class="mt-[5px] pb-[5px]">
+              <li
+                class="mt-[5px] pb-[5px] lg:hover:text-[#5A63D3] transition-all duration-500 ease-in-out"
+              >
                 <a href="https://keydesign.xyz/theme-options/">Theme options</a>
               </li>
-              <li class="mt-[5px] pb-[5px]">
+              <li
+                class="mt-[5px] pb-[5px] lg:hover:text-[#5A63D3] transition-all duration-500 ease-in-out"
+              >
                 <a href="https://keydesign.xyz/theme-builder/">Theme builder</a>
               </li>
-              <li>
+              <li
+                class="lg:hover:text-[#5A63D3] transition-all duration-500 ease-in-out"
+              >
                 <a href="https://keydesign.xyz/template-library/"
                   >Template library</a
                 >
@@ -916,14 +1049,26 @@
             <ul
               class="text-[14px] leading-[22.5px] text-[#060B25] lg:text-[16px] lg:leading-[25.6px]"
             >
-              <li class="pb-[5px]">
+              <li
+                class="pb-[5px] lg:hover:text-[#5A63D3] transition-all duration-500 ease-in-out"
+              >
                 <a href="https://keydesign.ticksy.com/">Support center</a>
               </li>
-              <li class="mt-[5px] pb-[5px]">
+              <li
+                class="mt-[5px] pb-[5px] lg:hover:text-[#5A63D3] transition-all duration-500 ease-in-out"
+              >
                 <a href="https://docs.keydesign.xyz/">Documentation</a>
               </li>
-              <li class="mt-[5px] pb-[5px]"><a href="#">Community</a></li>
-              <li><a href="#">Hosting</a></li>
+              <li
+                class="mt-[5px] pb-[5px] lg:hover:text-[#5A63D3] transition-all duration-500 ease-in-out"
+              >
+                <a href="#">Community</a>
+              </li>
+              <li
+                class="lg:hover:text-[#5A63D3] transition-all duration-500 ease-in-out"
+              >
+                <a href="#">Hosting</a>
+              </li>
             </ul>
           </div>
           <div class="p-2.5">
@@ -933,10 +1078,26 @@
             <ul
               class="text-[14px] leading-[22.5px] text-[#060B25] lg:text-[16px] lg:leading-[25.6px]"
             >
-              <li class="pb-[5px]"><a href="#">About us</a></li>
-              <li class="mt-[5px] pb-[5px]"><a href="#">Latest news</a></li>
-              <li class="mt-[5px] pb-[5px]"><a href="#">Contact us</a></li>
-              <li><a href="#">Resources</a></li>
+              <li
+                class="pb-[5px] lg:hover:text-[#5A63D3] transition-all duration-500 ease-in-out"
+              >
+                <a href="#">About us</a>
+              </li>
+              <li
+                class="mt-[5px] pb-[5px] lg:hover:text-[#5A63D3] transition-all duration-500 ease-in-out"
+              >
+                <a href="#">Latest news</a>
+              </li>
+              <li
+                class="mt-[5px] pb-[5px] lg:hover:text-[#5A63D3] transition-all duration-500 ease-in-out"
+              >
+                <a href="#">Contact us</a>
+              </li>
+              <li
+                class="lg:hover:text-[#5A63D3] transition-all duration-500 ease-in-out"
+              >
+                <a href="#">Resources</a>
+              </li>
             </ul>
           </div>
           <div class="p-2.5">
@@ -946,10 +1107,26 @@
             <ul
               class="text-[14px] leading-[22.5px] text-[#060B25] lg:text-[16px] lg:leading-[25.6px]"
             >
-              <li class="pb-[5px]"><a href="#">Behance</a></li>
-              <li class="mt-[5px] pb-[5px]"><a href="#">Dribbble</a></li>
-              <li class="mt-[5px] pb-[5px]"><a href="#">Facebook</a></li>
-              <li><a href="#">Instagram</a></li>
+              <li
+                class="pb-[5px] lg:hover:text-[#5A63D3] transition-all duration-500 ease-in-out"
+              >
+                <a href="#">Behance</a>
+              </li>
+              <li
+                class="mt-[5px] pb-[5px] lg:hover:text-[#5A63D3] transition-all duration-500 ease-in-out"
+              >
+                <a href="#">Dribbble</a>
+              </li>
+              <li
+                class="mt-[5px] pb-[5px] lg:hover:text-[#5A63D3] transition-all duration-500 ease-in-out"
+              >
+                <a href="#">Facebook</a>
+              </li>
+              <li
+                class="lg:hover:text-[#5A63D3] transition-all duration-500 ease-in-out"
+              >
+                <a href="#">Instagram</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -964,17 +1141,29 @@
           © Joule WordPress Theme. All Rights Reserved.
         </p>
         <ul class="p-2.5 flex">
-          <li class="bg-[#efeffb] rounded-xl text-[#5a63d3] py-2.5 px-4 mr-2.5">
+          <li
+            class="bg-[#efeffb] rounded-xl text-[#5a63d3] py-2.5 px-4 mr-2.5 lg:transition-all lg:duration-500 lg:hover:-translate-y-2 lg:hover:text-white lg:hover:bg-[#5a63d3]"
+          >
             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
           </li>
-          <li class="bg-[#efeffb] rounded-xl text-[#5a63d3] py-2.5 px-4 mr-2.5">
+          <li
+            class="bg-[#efeffb] rounded-xl text-[#5a63d3] py-2.5 px-4 mr-2.5 lg:transition-all lg:duration-500 lg:hover:-translate-y-2 lg:hover:text-white lg:hover:bg-[#5a63d3]"
+          >
             <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
           </li>
-          <li class="bg-[#efeffb] rounded-xl text-[#5a63d3] py-2.5 px-4 mr-2.5">
+          <li
+            class="bg-[#efeffb] rounded-xl text-[#5a63d3] py-2.5 px-4 mr-2.5 lg:transition-all lg:duration-500 lg:hover:-translate-y-2 lg:hover:text-white lg:hover:bg-[#5a63d3]"
+          >
             <a href="#"><i class="fa-brands fa-tiktok"></i></a>
           </li>
         </ul>
       </div>
     </footer>
+
+    <a
+      class="hidden md:hidden lg:flex lg:justify-center lg:items-center lg:fixed lg:right-5 lg:bottom-5 lg:w-[50px] lg:h-[50px] lg:border-2 lg:border-[#5a63d3] lg:rounded-full lg:transition-colors lg:duration-400 lg:ease-in-out lg:hover:bg-[#5a63d3] lg:hover:text-white"
+      href="#header"
+      ><i class="fa-solid fa-angle-up font-bold"></i
+    ></a>
   </body>
 </html>
