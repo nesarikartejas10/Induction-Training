@@ -258,6 +258,9 @@
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+  .grid-rows-6 {
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -294,17 +297,11 @@
   .gap-\[30px\] {
     gap: 30px;
   }
-  .overflow-hidden {
-    overflow: hidden;
-  }
   .rounded {
     border-radius: 0.25rem;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
-  }
-  .rounded-3xl {
-    border-radius: var(--radius-3xl);
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
@@ -313,17 +310,9 @@
     border-top-left-radius: var(--radius-2xl);
     border-top-right-radius: var(--radius-2xl);
   }
-  .rounded-t-xl {
-    border-top-left-radius: var(--radius-xl);
-    border-top-right-radius: var(--radius-xl);
-  }
   .rounded-b-2xl {
     border-bottom-right-radius: var(--radius-2xl);
     border-bottom-left-radius: var(--radius-2xl);
-  }
-  .rounded-b-xl {
-    border-bottom-right-radius: var(--radius-xl);
-    border-bottom-left-radius: var(--radius-xl);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -344,17 +333,11 @@
   .border-\[\#5A63D3\] {
     border-color: #5A63D3;
   }
-  .border-\[\#64748b\] {
-    border-color: #64748b;
-  }
   .border-\[\#EDF2F7\] {
     border-color: #EDF2F7;
   }
   .border-\[\#d8dee2\] {
     border-color: #d8dee2;
-  }
-  .border-\[\#e3eaf0\] {
-    border-color: #e3eaf0;
   }
   .border-\[\#edf2f7\] {
     border-color: #edf2f7;
@@ -391,9 +374,6 @@
   }
   .bg-\[linear-gradient\(to_bottom\,_\#2a3165\,_\#1d2346\)\] {
     background-image: linear-gradient(to bottom, #2a3165, #1d2346);
-  }
-  .bg-\[url\(\'\'\)\] {
-    background-image: url('');
   }
   .bg-\[url\(\'https\:\/\/joule\.keydesign\.xyz\/ai-analytics-tool\/wp-content\/uploads\/sites\/2\/2024\/11\/joule-analytics-bg-1\.svg\'\)\] {
     background-image: url('https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/joule-analytics-bg-1.svg');
@@ -513,10 +493,6 @@
   }
   .text-\[32px\] {
     font-size: 32px;
-  }
-  .leading-6 {
-    --tw-leading: calc(var(--spacing) * 6);
-    line-height: calc(var(--spacing) * 6);
   }
   .leading-7 {
     --tw-leading: calc(var(--spacing) * 7);
@@ -661,6 +637,11 @@
       margin-inline: auto;
     }
   }
+  .md\:mt-auto {
+    @media (width >= 48rem) {
+      margin-top: auto;
+    }
+  }
   .md\:mr-3 {
     @media (width >= 48rem) {
       margin-right: calc(var(--spacing) * 3);
@@ -676,6 +657,11 @@
       margin-bottom: 90px;
     }
   }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
@@ -686,9 +672,34 @@
       display: none;
     }
   }
+  .md\:h-\[300px\] {
+    @media (width >= 48rem) {
+      height: 300px;
+    }
+  }
   .md\:h-\[315px\] {
     @media (width >= 48rem) {
       height: 315px;
+    }
+  }
+  .md\:h-\[320px\] {
+    @media (width >= 48rem) {
+      height: 320px;
+    }
+  }
+  .md\:h-\[350px\] {
+    @media (width >= 48rem) {
+      height: 350px;
+    }
+  }
+  .md\:h-\[425px\] {
+    @media (width >= 48rem) {
+      height: 425px;
+    }
+  }
+  .md\:h-full {
+    @media (width >= 48rem) {
+      height: 100%;
     }
   }
   .md\:max-w-\[400px\] {
@@ -704,6 +715,21 @@
   .md\:basis-\[243px\] {
     @media (width >= 48rem) {
       flex-basis: 243px;
+    }
+  }
+  .md\:basis-\[346px\] {
+    @media (width >= 48rem) {
+      flex-basis: 346px;
+    }
+  }
+  .md\:basis-\[360px\] {
+    @media (width >= 48rem) {
+      flex-basis: 360px;
+    }
+  }
+  .md\:basis-\[375px\] {
+    @media (width >= 48rem) {
+      flex-basis: 375px;
     }
   }
   .md\:basis-\[420px\] {
@@ -724,6 +750,16 @@
   .md\:grid-cols-4 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-rows-3 {
+    @media (width >= 48rem) {
+      grid-template-rows: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .md\:flex-col {
+    @media (width >= 48rem) {
+      flex-direction: column;
     }
   }
   .md\:flex-row {
@@ -751,6 +787,11 @@
       gap: calc(var(--spacing) * 0);
     }
   }
+  .md\:gap-3 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 3);
+    }
+  }
   .md\:gap-8 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 8);
@@ -759,6 +800,31 @@
   .md\:gap-16 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 16);
+    }
+  }
+  .md\:rounded-tl-none {
+    @media (width >= 48rem) {
+      border-top-left-radius: 0;
+    }
+  }
+  .md\:rounded-tr-2xl {
+    @media (width >= 48rem) {
+      border-top-right-radius: var(--radius-2xl);
+    }
+  }
+  .md\:rounded-tr-none {
+    @media (width >= 48rem) {
+      border-top-right-radius: 0;
+    }
+  }
+  .md\:rounded-bl-2xl {
+    @media (width >= 48rem) {
+      border-bottom-left-radius: var(--radius-2xl);
+    }
+  }
+  .md\:rounded-bl-none {
+    @media (width >= 48rem) {
+      border-bottom-left-radius: 0;
     }
   }
   .md\:border {
@@ -783,6 +849,26 @@
       border-color: #edf2f7;
     }
   }
+  .md\:bg-\[url\(\'https\:\/\/joule\.keydesign\.xyz\/ai-analytics-tool\/wp-content\/uploads\/sites\/2\/2024\/11\/joule-analytics-bg-1\.svg\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('https://joule.keydesign.xyz/ai-analytics-tool/wp-content/uploads/sites/2/2024/11/joule-analytics-bg-1.svg');
+    }
+  }
+  .md\:bg-cover {
+    @media (width >= 48rem) {
+      background-size: cover;
+    }
+  }
+  .md\:bg-center {
+    @media (width >= 48rem) {
+      background-position: center;
+    }
+  }
+  .md\:bg-no-repeat {
+    @media (width >= 48rem) {
+      background-repeat: no-repeat;
+    }
+  }
   .md\:px-5 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 5);
@@ -801,6 +887,16 @@
   .md\:px-\[100px\] {
     @media (width >= 48rem) {
       padding-inline: 100px;
+    }
+  }
+  .md\:py-2\.5 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 2.5);
+    }
+  }
+  .md\:py-5 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 5);
     }
   }
   .md\:py-\[26px\] {
@@ -864,6 +960,12 @@
       font-size: 44px;
     }
   }
+  .md\:leading-\[30px\] {
+    @media (width >= 48rem) {
+      --tw-leading: 30px;
+      line-height: 30px;
+    }
+  }
   .md\:leading-\[34\.56px\] {
     @media (width >= 48rem) {
       --tw-leading: 34.56px;
@@ -886,6 +988,11 @@
     @media (width >= 48rem) {
       --tw-font-weight: var(--font-weight-medium);
       font-weight: var(--font-weight-medium);
+    }
+  }
+  .md\:text-\[\#FFFFFF99\] {
+    @media (width >= 48rem) {
+      color: #FFFFFF99;
     }
   }
   .md\:shadow-\[inset_0_-10px_0_0_\#cdced33b\] {
@@ -946,14 +1053,14 @@
       order: 2;
     }
   }
-  .lg\:mx-0 {
-    @media (width >= 64rem) {
-      margin-inline: calc(var(--spacing) * 0);
-    }
-  }
   .lg\:mx-auto {
     @media (width >= 64rem) {
       margin-inline: auto;
+    }
+  }
+  .lg\:mt-auto {
+    @media (width >= 64rem) {
+      margin-top: auto;
     }
   }
   .lg\:ml-56 {
@@ -1001,9 +1108,9 @@
       width: 325px;
     }
   }
-  .lg\:max-w-0 {
+  .lg\:w-full {
     @media (width >= 64rem) {
-      max-width: calc(var(--spacing) * 0);
+      width: 100%;
     }
   }
   .lg\:max-w-\[650px\] {
@@ -1021,9 +1128,14 @@
       max-width: 1250px;
     }
   }
-  .lg\:max-w-full {
+  .lg\:basis-\[240px\] {
     @media (width >= 64rem) {
-      max-width: 100%;
+      flex-basis: 240px;
+    }
+  }
+  .lg\:basis-\[375px\] {
+    @media (width >= 64rem) {
+      flex-basis: 375px;
     }
   }
   .lg\:basis-\[445px\] {
@@ -1036,9 +1148,24 @@
       flex-basis: 500px;
     }
   }
+  .lg\:basis-\[504px\] {
+    @media (width >= 64rem) {
+      flex-basis: 504px;
+    }
+  }
+  .lg\:basis-\[696px\] {
+    @media (width >= 64rem) {
+      flex-basis: 696px;
+    }
+  }
   .lg\:cursor-pointer {
     @media (width >= 64rem) {
       cursor: pointer;
+    }
+  }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
     }
   }
   .lg\:items-center {
@@ -1264,6 +1391,11 @@
       font-size: 32px;
     }
   }
+  .lg\:text-\[38px\] {
+    @media (width >= 64rem) {
+      font-size: 38px;
+    }
+  }
   .lg\:text-\[48px\] {
     @media (width >= 64rem) {
       font-size: 48px;
@@ -1308,6 +1440,12 @@
     @media (width >= 64rem) {
       --tw-leading: 35px;
       line-height: 35px;
+    }
+  }
+  .lg\:leading-\[47\.5px\] {
+    @media (width >= 64rem) {
+      --tw-leading: 47.5px;
+      line-height: 47.5px;
     }
   }
   .lg\:leading-\[57\.6px\] {
